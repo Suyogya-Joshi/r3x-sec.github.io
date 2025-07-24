@@ -53,11 +53,9 @@ cat -- ./-
 <details>
 <summary>Terminal Output</summary>
 
-    bandit1@bandit:~$ ls
-    -
-    bandit1@bandit:~$ cat ./-
-    263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-    bandit1@bandit:~$ 
+  
+    Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+   
 
 </details>
 
