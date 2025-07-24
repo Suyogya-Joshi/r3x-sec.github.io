@@ -118,9 +118,6 @@ defaults:
       permalink: /:title/
 
 collections:
-  bandit:
-    output: true
-     permalink: /:collection/:name/
   tabs:
     output: true
     sort_by: order
