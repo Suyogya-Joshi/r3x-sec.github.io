@@ -106,6 +106,7 @@ defaults:
       comments: true
       toc: true
       permalink: /posts/:title/
+      cache-control: no-cache
   - scope:
       path: _drafts
     values:
