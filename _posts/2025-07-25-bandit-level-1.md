@@ -51,8 +51,17 @@ cat -- ./-
    ```
 
 ---
-
-**Code Block and Notes**
+<details>
+<summary>Terminal Output</summary>
+```bash
+bandit1@bandit:~$ ls
+-
+bandit1@bandit:~$ cat ./-
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+bandit1@bandit:~$ exit
+```
+</details>
+---
 
 **Bash Trick (Alternative to `cat`)**
 
@@ -74,7 +83,7 @@ Useful in scripting contexts or inline formatting
 
 ---
 
-**Why It Matters (Cybersec)**
+**Why It Matters**
 
 - Files named `-`, `--help`, or other "trick" names are common in CTFs, malware analysis, and forensic work
 - Learning how to handle these precisely prevents misreads, bugs, and even exploitation in automation scripts
