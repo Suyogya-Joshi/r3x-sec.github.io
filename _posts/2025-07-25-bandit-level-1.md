@@ -50,17 +50,19 @@ cat -- ./-
    cat -- ./-
    ```
 
----
 <details>
 <summary>Terminal Output</summary>
+
 ```bash
 bandit1@bandit:~$ ls
 -
 bandit1@bandit:~$ cat ./-
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-bandit1@bandit:~$ exit
+bandit1@bandit:~$ 
 ```
+
 </details>
+
 ---
 
 **Bash Trick (Alternative to `cat`)**

@@ -50,8 +50,6 @@ cat spaces\ in\ this\ filename
    cat spaces\ in\ this\ filename # Using TAB auto completion is suggested as it is faster than typing entire file name.
    ```
 
----
-
 <details>
 <summary>Terminal Output</summary>
 

@@ -45,7 +45,6 @@ cat ...Hiding-From-You
   cat ...Hiding-From-You
    ```
 
----
 <details>
 <summary>Terminal Output</summary>
 
@@ -72,7 +71,7 @@ bandit3@bandit:~/inhere$
 **Bash Trick**
 
 ```bash
-echo "$( < inhere/.hidden )"
+echo "$( < inhere/...Hiding-From-You )"
 ```
 
 This uses Bash's built-in input redirection.  

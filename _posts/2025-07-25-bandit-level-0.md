@@ -45,7 +45,6 @@ cat readme
 
 That’s your password for Level 1.
 
----
 <details>
 <summary>Terminal Output</summary>
 
@@ -63,6 +62,7 @@ The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
 
 </details>
+
 ---
 
 ###  Bash Trick Learned
