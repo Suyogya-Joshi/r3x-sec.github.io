@@ -48,7 +48,6 @@ cat ...Hiding-From-You
 <details>
 <summary>Terminal Output</summary>
 
-```bash
 bandit3@bandit:~$ ls
 inhere
 bandit3@bandit:~$ cd
@@ -62,7 +61,6 @@ drwxr-xr-x 3 root    root    4096 Apr 10 14:23 ..
 bandit3@bandit:~/inhere$ cat ...Hiding-From-You
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 bandit3@bandit:~/inhere$
-```
 
 </details>
 

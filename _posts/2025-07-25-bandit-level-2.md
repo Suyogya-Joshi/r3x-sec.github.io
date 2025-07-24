@@ -53,13 +53,11 @@ cat spaces\ in\ this\ filename
 <details>
 <summary>Terminal Output</summary>
 
-```bash
 bandit2@bandit:~$ ls
 spaces in this filename
 bandit2@bandit:~$ cat spaces\ in\ this\ filename
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 bandit2@bandit:~$
-```
 
 </details>
 
