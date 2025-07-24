@@ -2,6 +2,7 @@
 title: About
 icon: fas fa-user
 order: 1
+author_profile: true
 ---
 
 # 👋 About Rex
