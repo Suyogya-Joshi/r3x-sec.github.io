@@ -48,7 +48,7 @@ That’s your password for Level 1.
 <details>
 <summary>Terminal Output</summary>
 
-  Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+    Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 </details>
 

@@ -47,10 +47,8 @@ cat ...Hiding-From-You
 
 <details>
 <summary>Terminal Output</summary>
-
     
     Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-    
 
 </details>
 

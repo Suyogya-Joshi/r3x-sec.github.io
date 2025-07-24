@@ -53,10 +53,8 @@ cat -- ./-
 <details>
 <summary>Terminal Output</summary>
 
-  
     Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
    
-
 </details>
 
 **Bash Trick (Alternative to `cat`)**
