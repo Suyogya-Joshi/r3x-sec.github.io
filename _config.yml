@@ -59,7 +59,7 @@ theme_mode: dark  # Set to dark theme by default
 #  Media
 # -------------------------
 
-avatar:  # Add path later like /assets/img/avatar.png
+avatar: /assets/img/avatar_me.jpg
 social_preview_image:  # Optional open graph preview
 
 cdn:  # optional
