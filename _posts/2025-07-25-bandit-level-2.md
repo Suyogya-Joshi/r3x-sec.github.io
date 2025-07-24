@@ -63,8 +63,6 @@ bandit2@bandit:~$
 
 </details>
 
----
-
 **Bash Trick**
 
 ```bash

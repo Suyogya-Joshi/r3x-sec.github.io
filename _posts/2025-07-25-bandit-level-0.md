@@ -63,8 +63,6 @@ The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 </details>
 
----
-
 ###  Bash Trick Learned
 
 ```bash

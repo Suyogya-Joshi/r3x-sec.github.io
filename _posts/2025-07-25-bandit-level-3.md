@@ -65,8 +65,6 @@ bandit3@bandit:~/inhere$
 ```
 
 </details>
----
-
 
 **Bash Trick**
 

@@ -63,8 +63,6 @@ bandit1@bandit:~$
 
 </details>
 
----
-
 **Bash Trick (Alternative to `cat`)**
 
 ```bash
