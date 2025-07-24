@@ -48,19 +48,19 @@ cat ...Hiding-From-You
 <details>
 <summary>Terminal Output</summary>
 
-bandit3@bandit:~$ ls
-inhere
-bandit3@bandit:~$ cd
-bandit3@bandit:~$ cd inhere/
-bandit3@bandit:~/inhere$ ls
-bandit3@bandit:~/inhere$ ls -la
-total 12
-drwxr-xr-x 2 root    root    4096 Apr 10 14:23 .
-drwxr-xr-x 3 root    root    4096 Apr 10 14:23 ..
--rw-r----- 1 bandit4 bandit3   33 Apr 10 14:23 ...Hiding-From-You
-bandit3@bandit:~/inhere$ cat ...Hiding-From-You
-2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-bandit3@bandit:~/inhere$
+    bandit3@bandit:~$ ls
+    inhere
+    bandit3@bandit:~$ cd
+    bandit3@bandit:~$ cd inhere/
+    bandit3@bandit:~/inhere$ ls
+    bandit3@bandit:~/inhere$ ls -la
+    total 12
+    drwxr-xr-x 2 root    root    4096 Apr 10 14:23 .
+    drwxr-xr-x 3 root    root    4096 Apr 10 14:23 ..
+    -rw-r----- 1 bandit4 bandit3   33 Apr 10 14:23 ...Hiding-From-You
+    bandit3@bandit:~/inhere$ cat ...Hiding-From-You
+    2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+    bandit3@bandit:~/inhere$
 
 </details>
 
