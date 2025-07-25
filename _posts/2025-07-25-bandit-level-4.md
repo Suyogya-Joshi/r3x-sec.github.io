@@ -55,7 +55,7 @@ file ./* | grep "ASCII text"
    cat ./-file07
    ```
 
-   details>
+<details>
 <summary>Terminal Output</summary>
     
     Password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
