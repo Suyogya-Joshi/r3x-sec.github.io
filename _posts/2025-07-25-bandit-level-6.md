@@ -1,6 +1,6 @@
 ---
 title: "Bandit Level 6 → Level 7"
-date: 2025-07-26
+date: 2025-07-25
 categories: [Walkthroughs, OverTheWire]
 tags: [bandit, linux, hidden-files, bash, ctf, wargames]
 layout: post

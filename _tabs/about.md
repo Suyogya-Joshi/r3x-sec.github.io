@@ -5,29 +5,17 @@ order: 1
 author_profile: true
 ---
 
-# 👋 About Rex
+#  About Me
 
-Hi, I’m **Rex (Suyogya Joshi)** — a cybersecurity student and hands-on learner based in Australia.
+Hi, I’m Rex (Suyogya Joshi) — a cybersecurity student currently studying for my Bachelor of Cybersecurity in Australia.
 
-I created **RexSec** to document my journey into ethical hacking, penetration testing, and defensive security. This blog is a digital lab notebook where I share:
+I started this blog, RexSec, to document my journey as a beginner in the field and to share what I learn along the way. Here, you'll find walkthroughs from platforms like OverTheWire and TryHackMe, along with personal notes on various topics, tools, and experiments.
 
--  Walkthroughs of platforms like **TryHackMe**, **OverTheWire**, and **Hack The Box**
--  My personal notes on **Linux**, **Bash scripting**, and **networking**
--  Insights into tools like **Nmap**, **Wireshark**, **Metasploit**, and more
--  Experiments with **Raspberry Pi**, **Python**, and offensive security
+I hope you find these posts helpful and enjoy exploring them as much as I enjoy creating them!
 
 ---
 
-## 🎯 My Goals
-
-- Land a cybersecurity internship in the next 6–10 months  
-- Build a strong foundation in **offensive security**
-- Master tools, techniques, and concepts through real labs  
-- Earn certifications like **eJPT** and **CompTIA Security+**
-
----
-
-## 🛠️ My Setup
+##  My Setup
 
 -  **Laptop:** AMD Ryzen 7, 16GB RAM, RTX 3050  
 -  **VMs:** Kali Linux, Windows, Ubuntu  
@@ -35,7 +23,7 @@ I created **RexSec** to document my journey into ethical hacking, penetration te
 
 ---
 
-## 📬 Let’s Connect
+## Let’s Connect
 
 Feel free to reach out or collaborate:
 - ✉️ Email: suyogyarajjoshi040@gmail.com  
