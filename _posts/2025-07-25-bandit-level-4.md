@@ -54,7 +54,6 @@ file ./* | grep "ASCII text"
   ```bash
    cat ./-file07
    ```
-
 <details>
 <summary>Terminal Output</summary>
     
@@ -83,7 +82,7 @@ file ./* | grep "ASCII text"
  ---
 
  **Status**  
-Password for Level 4 successfully retrieved.  
+Password for Level 5 successfully retrieved.  
 Onward to [Level 5 → Level 6](/bandit-level-5) next.
 
 ---
