@@ -39,10 +39,10 @@ cat /var/lib/dpkg/info/bandit7.password
 
 **Explanation of flags:**
 
-- type f → only look for files (not directories)
-- user bandit7 → file must be owned by user bandit7
-- group bandit6 → file must belong to group bandit6
-- size 33c → file must be exactly 33 bytes
+- -type f → only look for files (not directories)
+- -user bandit7 → file must be owned by user bandit7
+- -group bandit6 → file must belong to group bandit6
+- -size 33c → file must be exactly 33 bytes
 
 2>/dev/null → suppress permission-denied errors
  **What is `/dev/null`?**
