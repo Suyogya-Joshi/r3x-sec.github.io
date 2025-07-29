@@ -22,6 +22,7 @@ sort data.txt | uniq -u
 ---
 
 **Solution Steps**
+
 1. Connect to the server:
 
    ```bash
@@ -41,6 +42,7 @@ sort data.txt | uniq -u
   ```
 
 **Explanation of flags:**
+
 -u : filters only lines that occur exactly once.
 -c : counts the number of duplicate lines
 
@@ -60,11 +62,13 @@ sort data.txt | uniq -u
 ---
 
 **Key Learnings**
+
 - sorting file with duplicate lines.
  
  ---
 
 **Why It Matters**
+
  Filter logs for repeated or unique entries.
 - Automate data analysis during **CTFs, pentesting labs, and forensics.**
 - Build systematic, efficient pipelines for real-world cybersecurity workflows.

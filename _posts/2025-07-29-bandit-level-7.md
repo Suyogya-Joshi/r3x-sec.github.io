@@ -20,10 +20,11 @@ grep "millionth" data.txt
 ---
 
 **Solution Steps**
+
 1. Connect to the server:
 
-   ```bash
-   ssh bandit7@bandit.labs.overthewire.org -p 2220
+  ```bash
+  ssh bandit7@bandit.labs.overthewire.org -p 2220
    ```
 
 2. List all the files in the home directory:
@@ -49,12 +50,14 @@ grep "millionth" data.txt
 ---
 
 **Key Learnings**
+
 - Efficient pattern searching with `grep`.
 - Handling files with clear command structure.
 
 ----
 
 **Why It Matters**
+
 `grep` is essential for:
 - Log and output parsing in forensics and incident response.
 - Quick keyword hunting during CTFs and pentesting.
