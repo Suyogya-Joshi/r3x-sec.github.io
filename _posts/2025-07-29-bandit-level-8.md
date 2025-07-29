@@ -37,7 +37,7 @@ sort data.txt | uniq -u
 
 3. Use the `sort` and `uniq` commands with appropriate flags to obtain the password.
 
- ```bash
+  ```bash
   sort data.txt | uniq -u #instead of -u flag we can also use -c flag
   ```
 
@@ -55,7 +55,8 @@ sort data.txt | uniq -u
 <details>
 <summary>Terminal Output</summary>
     
-    Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+    Password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
 
 </details>
 
