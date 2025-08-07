@@ -25,7 +25,7 @@ strings data.txt | sort | uniq -u
 1. Connect to the server:
 
    ```bash
-   ssh bandit8@bandit.labs.overthewire.org -p 2220
+   ssh bandit9@bandit.labs.overthewire.org -p 2220
    ```
 
 2. List all the files in the home directory:
@@ -45,6 +45,7 @@ strings data.txt | sort | uniq -u
 -u : filters only lines that occur exactly once.
 
 **Why `sort` before `uniq`?**
+
 Refer to [Level 8 ](/bandit-level-8) for the answer.
 
 <details>
