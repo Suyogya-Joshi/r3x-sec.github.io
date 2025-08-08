@@ -9,11 +9,13 @@ layout: post
 **Level 7 → Level 8**
 
 **Concept Explained**  
+
 The goal is to find the password located next to the word `millionth` in `data.txt`. This level uses the `grep` command to search for patterns inside files.
 
 ---
 
 **Commands Used**
+
 ```bash
 grep "millionth" data.txt
 ```
@@ -44,13 +46,14 @@ grep "millionth" data.txt
 <details>
 <summary>Terminal Output</summary>
 
-Password: `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`
+Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 </details>
 
 ---
 
 **Key Learnings**
+
 - Efficient pattern searching with `grep`.
 - Quickly extracting targeted information from large files.
 - Understanding the basic syntax of `grep`.
@@ -58,6 +61,7 @@ Password: `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`
 ---
 
 **Why It Matters**
+
 `grep` is essential for:
 - Log and output parsing in forensics and incident response.
 - Quick keyword hunting during CTFs and pentesting.
@@ -66,6 +70,7 @@ Password: `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`
 ---
 
 **Status**  
+
 Password for Level 8 retrieved.  
 Onward to [Level 8 → Level 9](/bandit-level-8-to-9/) next.
 

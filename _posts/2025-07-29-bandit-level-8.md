@@ -9,6 +9,7 @@ layout: post
 **Level 8 → Level 9**
 
 **Concept Explained**  
+
 In this level, you must find the password in `data.txt` that appears **only once**. This challenge introduces the `sort` and `uniq` commands, along with the `|` (pipe) operator to chain commands.
 
 ---
@@ -48,6 +49,7 @@ sort data.txt | uniq -u
 ---
 
 **Why `sort` before `uniq`?**
+
 - `uniq` only compares **adjacent** lines.  
 - If duplicates are scattered in the file, `uniq` will miss them.  
 - Sorting first ensures duplicates are grouped together so `uniq` can filter them correctly.
@@ -62,12 +64,14 @@ Password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 ---
 
 **Key Learnings**
+
 - How to use `sort` and `uniq` together to isolate unique values.
 - Why command order matters in pipelines.
 
 ---
 
 **Why It Matters**
+
 - Filtering logs for repeated or unique entries.  
 - Automating data analysis in **CTFs, pentesting labs, and forensics**.  
 - Building efficient command-line workflows for real-world cybersecurity tasks.
@@ -75,6 +79,7 @@ Password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 ---
 
 **Status**  
+
 Password for Level 9 retrieved.  
 Onward to [Level 9 → Level 10](/bandit-level-9-to-10/) next.
 

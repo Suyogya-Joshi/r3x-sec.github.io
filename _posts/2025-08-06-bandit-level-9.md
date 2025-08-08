@@ -9,11 +9,13 @@ layout: post
 **Level 9 → Level 10**
 
 **Concept Explained**  
+
 The goal is to extract the password from `data.txt`. The file contains binary data mixed with human-readable strings. This level is similar to Level 8, but here we need the `strings` command to extract printable characters, and then find the **only line** that appears once.
 
 ---
 
 **Commands Used**
+
 ```bash
 ls -l
 strings data.txt | sort | uniq -u
@@ -42,12 +44,14 @@ strings data.txt | sort | uniq -u
     ```
 
     **Flag explanations:**
+
     - `-u` — only print lines that occur exactly once.  
     - Sorting before `uniq` ensures identical lines are grouped so `uniq` can detect duplicates.
 
 ---
 
 **Why `sort` before `uniq`?**  
+
 `uniq` only compares **adjacent lines**. Without sorting, duplicates scattered through the file won’t be removed properly.  
 Refer to [Level 8 → Level 9](/bandit-level-8-to-9/) for a detailed explanation.
 
@@ -61,6 +65,7 @@ Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 ---
 
 **Key Learnings**
+
 - How to extract human-readable strings from binary data with `strings`.
 - How to isolate unique lines using `sort` and `uniq`.
 - Why pipeline order matters in command chaining.
@@ -68,6 +73,7 @@ Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 ---
 
 **Why It Matters**
+
 - Filtering logs for repeated or unique entries.  
 - Automating data extraction in **CTFs, pentesting labs, and forensics**.  
 - Building efficient command-line workflows for security analysis.
@@ -75,6 +81,7 @@ Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 ---
 
 **Status**  
+
 Password for Level 10 retrieved.  
 Onward to [Level 10 → Level 11](/bandit-level-10-to-11/) next.
 
