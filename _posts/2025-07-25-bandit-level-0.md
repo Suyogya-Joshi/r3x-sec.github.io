@@ -9,6 +9,7 @@ layout: post
  **Level 0 → Level 1**
 
  **Concept Explained**  
+ 
 SSH into a remote machine and retrieve a file using basic Linux CLI commands.  
 This is the true beginning of any ethical hacker's journey — learning to operate in a terminal-first world.
 

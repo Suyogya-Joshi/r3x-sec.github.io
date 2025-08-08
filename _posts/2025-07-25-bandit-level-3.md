@@ -9,6 +9,7 @@ layout: post
 **Level 3 → Level 4**
 
 **Concept Explained**  
+
 You're told the password is hidden in a file within the `inhere` directory. This level focuses on discovering and reading hidden files (files starting with a dot), which is common in both admin and attacker workflows.
 
 ---

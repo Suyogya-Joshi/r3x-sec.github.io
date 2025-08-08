@@ -9,6 +9,7 @@ layout: post
 **Level 2 → Level 3**
 
 **Concept Explained**  
+
 This level tests your ability to handle files with **spaces in their names**. A common source of bugs in scripts and misfires in CLI, it’s a great test of command-line precision.
 
 ---

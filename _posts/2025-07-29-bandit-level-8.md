@@ -5,18 +5,18 @@ categories: [Walkthroughs, OverTheWire]
 tags: [bandit, linux, pattern-searching, bash, ctf, wargames]
 layout: post
 ---
+
 **Level 8 → Level 9**
 
-**Concept Explained** 
-In this level you are supposed to find the password in `data.txt` that is the only line occurring exactly once. This level will introduce new commands like `sort` and `uniq` along with the use of `pipe` operator.
+**Concept Explained**  
+In this level, you must find the password in `data.txt` that appears **only once**. This challenge introduces the `sort` and `uniq` commands, along with the `|` (pipe) operator to chain commands.
 
 ---
 
 **Commands Used**
-
 ```bash
 ls -l
-sort data.txt | uniq -u 
+sort data.txt | uniq -u
 ```
 
 ---
@@ -25,60 +25,58 @@ sort data.txt | uniq -u
 
 1. Connect to the server:
 
-   ```bash
-   ssh bandit8@bandit.labs.overthewire.org -p 2220
-   ```
+    ```bash
+    ssh bandit8@bandit.labs.overthewire.org -p 2220
+    ```
 
-2. List all the files in the home directory:
+2. List all files in the home directory:
 
-  ```bash
-  ls -l
-  ```
+    ```bash
+    ls -l
+    ```
 
-3. Use the `sort` and `uniq` commands with appropriate flags to obtain the password.
+3. Sort the file and filter lines that occur exactly once:
 
-  ```bash
-  sort data.txt | uniq -u #instead of -u flag we can also use -c flag
-  ```
+    ```bash
+    sort data.txt | uniq -u
+    ```
 
-**Explanation of flags:**
+    **Flag explanations:**
+    - `-u` — only print lines that occur exactly once.  
+    - `-c` — count occurrences of each line (alternative to `-u` for verification).
 
--u : filters only lines that occur exactly once.
--c : counts the number of duplicate lines
+---
 
- **Why `sort` before `uniq`?**
-
-- `uniq` only removes adjacent duplicates.  
-- If duplicates are not next to each other, `uniq` will not filter them.
-- Using `sort` ensures duplicates are adjacent, allowing `uniq -u` to detect and remove duplicates accurately.
+**Why `sort` before `uniq`?**
+- `uniq` only compares **adjacent** lines.  
+- If duplicates are scattered in the file, `uniq` will miss them.  
+- Sorting first ensures duplicates are grouped together so `uniq` can filter them correctly.
 
 <details>
 <summary>Terminal Output</summary>
-    
-    Password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
+Password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
 </details>
 
 ---
 
 **Key Learnings**
-
-- sorting file with duplicate lines.
- 
- ---
-
-**Why It Matters**
-
- Filter logs for repeated or unique entries.
-- Automate data analysis during **CTFs, pentesting labs, and forensics.**
-- Build systematic, efficient pipelines for real-world cybersecurity workflows.
+- How to use `sort` and `uniq` together to isolate unique values.
+- Why command order matters in pipelines.
 
 ---
 
- **Status**  
-Password for Level 9 successfully retrieved.  
-Onward to [Level 9 → Level 10](/bandit-level-9) next.
+**Why It Matters**
+- Filtering logs for repeated or unique entries.  
+- Automating data analysis in **CTFs, pentesting labs, and forensics**.  
+- Building efficient command-line workflows for real-world cybersecurity tasks.
+
+---
+
+**Status**  
+Password for Level 9 retrieved.  
+Onward to [Level 9 → Level 10](/bandit-level-9-to-10/) next.
 
 ---
 

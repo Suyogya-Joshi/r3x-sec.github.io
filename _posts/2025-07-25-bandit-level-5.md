@@ -8,6 +8,7 @@ layout: post
 **Level 5 → Level 6**
 
 **Concept Explained** 
+
 In this level you need to find the password stored in a file within `inhere` directory. This level introduces a new command `find` which allows you search file or folders with different options. Unlike previous there are multiple directories within `inhere` directory.
 
 ---

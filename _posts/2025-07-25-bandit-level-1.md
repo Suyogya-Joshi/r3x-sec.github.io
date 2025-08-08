@@ -9,6 +9,7 @@ layout: post
 **Level 1 → Level 2**
 
 **Concept Explained**  
+
 You’re given a file named `-` in your home directory. The challenge is accessing it correctly — without your commands confusing it for a CLI option. This is where your Linux-fu begins to sharpen.
 
 ---

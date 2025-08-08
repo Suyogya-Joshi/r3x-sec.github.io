@@ -8,74 +8,75 @@ layout: post
 
 **Level 9 → Level 10**
 
-**Concept Explained**
-The goal of this level is to extract the password from the `data.txt` file. The `data.txt` file contains binary values mixed with human readable string characters. This level is similar to how level 8 was done, but we need to use an additional `strings` command which allows us to extract the human readable characters from `data.txt`, where the password is the only line of text that occurs only once in the file.
+**Concept Explained**  
+The goal is to extract the password from `data.txt`. The file contains binary data mixed with human-readable strings. This level is similar to Level 8, but here we need the `strings` command to extract printable characters, and then find the **only line** that appears once.
 
 ---
 
 **Commands Used**
-
 ```bash
 ls -l
 strings data.txt | sort | uniq -u
 ```
+
 ---
 
 **Solution Steps**
 
 1. Connect to the server:
 
-   ```bash
-   ssh bandit9@bandit.labs.overthewire.org -p 2220
-   ```
+    ```bash
+    ssh bandit9@bandit.labs.overthewire.org -p 2220
+    ```
 
-2. List all the files in the home directory:
+2. List all files in the home directory:
 
-  ```bash
-  ls -l
-  ```
+    ```bash
+    ls -l
+    ```
 
-3. Use the `sort` and `uniq` commands with appropriate flags to obtain the password.
+3. Extract readable text from `data.txt`, sort the lines, and display only the unique one (the password):
 
-  ```bash
-  strings data.txt | sort | uniq -u # -u flag prints lines that occur only once
-  ```
+    ```bash
+    strings data.txt | sort | uniq -u
+    ```
 
-  **Explanation of flags:**
+    **Flag explanations:**
+    - `-u` — only print lines that occur exactly once.  
+    - Sorting before `uniq` ensures identical lines are grouped so `uniq` can detect duplicates.
 
-- `-u` : filters only lines that occur exactly once.
+---
 
-**Why `sort` before `uniq`?**
-
-Refer to [Level 8 ](_posts/2025-07-29-bandit-level-8.md) for the answer.
+**Why `sort` before `uniq`?**  
+`uniq` only compares **adjacent lines**. Without sorting, duplicates scattered through the file won’t be removed properly.  
+Refer to [Level 8 → Level 9](/bandit-level-8-to-9/) for a detailed explanation.
 
 <details>
 <summary>Terminal Output</summary>
-    
-    Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
 </details>
 
 ---
 
 **Key Learnings**
-
-- Extracting human readable strings from a file containing binary garbage.
-- Sorting file with duplicate lines.
- 
- ---
-
-**Why It Matters**
-
- Filter logs for repeated or unique entries.
-- Automate data analysis during **CTFs, pentesting labs, and forensics.**
-- Build systematic, efficient pipelines for real-world cybersecurity workflows.
+- How to extract human-readable strings from binary data with `strings`.
+- How to isolate unique lines using `sort` and `uniq`.
+- Why pipeline order matters in command chaining.
 
 ---
 
- **Status**  
-Password for Level 10 successfully retrieved.  
-Onward to [Level 10 → Level 11](/bandit-level-10) next.
+**Why It Matters**
+- Filtering logs for repeated or unique entries.  
+- Automating data extraction in **CTFs, pentesting labs, and forensics**.  
+- Building efficient command-line workflows for security analysis.
+
+---
+
+**Status**  
+Password for Level 10 retrieved.  
+Onward to [Level 10 → Level 11](/bandit-level-10-to-11/) next.
 
 ---
 

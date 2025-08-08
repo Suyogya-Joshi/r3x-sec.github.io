@@ -8,6 +8,7 @@ layout: post
 **Level 6 → Level 7**
 
 **Concept Explained** 
+
 In previous levels, you searched files within you own user directories. However, In this level you are supposed to find password which is stored somewhere in the server (file system "/"). you are given the properties of the file and you are supposed to use those properties of file to use find command with proper flags/options to locate file with password in the server.
 
 ---
