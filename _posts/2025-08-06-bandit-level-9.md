@@ -5,10 +5,11 @@ categories: [Walkthroughs, OverTheWire]
 tags: [bandit, linux, pattern-searching, bash, ctf, wargames]
 layout: post
 ---
+
 **Level 9 → Level 10**
 
 **Concept Explained**
-The goal of this level is to extract password in the `data.txt` file. The `data.txt` file contains binary values mixed with human readable string character. This level is similar to how level 8 was done but we need to use one additional  `strings` command which allows us to extract the human readable character from the `data.txt`where the password is the only line of text that occurs only once in the file.
+The goal of this level is to extract the password from the `data.txt` file. The `data.txt` file contains binary values mixed with human readable string characters. This level is similar to how level 8 was done, but we need to use an additional `strings` command which allows us to extract the human readable characters from `data.txt`, where the password is the only line of text that occurs only once in the file.
 
 ---
 
@@ -16,7 +17,7 @@ The goal of this level is to extract password in the `data.txt` file. The `data.
 
 ```bash
 ls -l
-strings data.txt | sort | uniq -u 
+strings data.txt | sort | uniq -u
 ```
 ---
 
@@ -37,16 +38,16 @@ strings data.txt | sort | uniq -u
 3. Use the `sort` and `uniq` commands with appropriate flags to obtain the password.
 
   ```bash
-   strings data.txt | sort | uniq -u # flag -u prints line of text occuiring only once
+  strings data.txt | sort | uniq -u # -u flag prints lines that occur only once
   ```
 
   **Explanation of flags:**
 
--u : filters only lines that occur exactly once.
+- `-u` : filters only lines that occur exactly once.
 
 **Why `sort` before `uniq`?**
 
-Refer to [Level 8 ](/bandit-level-8) for the answer.
+Refer to [Level 8 ](_posts/2025-07-29-bandit-level-8.md) for the answer.
 
 <details>
 <summary>Terminal Output</summary>
