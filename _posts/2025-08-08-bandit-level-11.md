@@ -68,7 +68,7 @@ Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 
 **Key Learnings**
 
--Using `tr` command to decipher the ROT13 text.
+- Using `tr` command to decipher the ROT13 text.
 
 ---
 

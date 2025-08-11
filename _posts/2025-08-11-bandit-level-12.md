@@ -9,12 +9,14 @@ layout: post
 **Level 12 → Level 13**
 
 **Concept Explained**  
+
 The goal of this level is to extract password from a file which is a **hexdump of a file repeatedly compressed in layers**.
 It is recommended to make a new directory (in /tmp folder) and copy the file into that directory.
 
 ---
 
 **Understanding HexDump**
+
 Hexdump is a simple visual representation of binary data shown in hexadecimal (base 16) form often alongside its ASCII characters.
 
 ---

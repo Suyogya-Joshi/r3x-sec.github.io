@@ -15,8 +15,28 @@ In this level you are given the private key for level 14 which you will be using
 ---
 
 **Understanding  SSH key Authentication**
+SSH key authentication allows secure, password-less login to a server using a key pair (private key on your device, public key on the server).
 
-The private key is something the is not supposed to be shared or leaked. The Private key is something  that allows a user to identify itself to a server or the system you are trying to SSH  into. 
+Authentication Flow
+1. Login Request:
+    Client sends an SSH login request to the server.
+
+2. Challenge:
+    Server sends an encrypted challenge (using your public key).
+
+3. Decrypt & Sign:
+    Client uses the private key to decrypt the challenge and create a signature.
+
+4. Verification:
+    Server uses the stored public key to verify the signature.
+
+5. Result:
+    If verification succeeds → Authentication successful and a secure SSH session is established.
+
+Key Point:
+
+- The private key never leaves your machine.
+- The server confirms your identity by checking if you can correctly decrypt/sign using the matching private key.
 
 ---
 
