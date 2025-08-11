@@ -46,7 +46,7 @@ Hexdump is a simple visual representation of binary data shown in hexadecimal (b
     #If POSIX tar archive:
     tar -xf file1
     ```
-    ---
+---
 
 **Solution Steps**
 
