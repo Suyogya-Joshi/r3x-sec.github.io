@@ -1,12 +1,12 @@
 ---
-title: "Bandit Level 10 → Level 11"
+title: "Bandit Level 11 → Level 12"
 date: 2025-08-08
 categories: [Walkthroughs, OverTheWire]
-tags: [bandit, linux, base64, bash, ctf, wargames]
+tags: [bandit, linux, ROT13, Cryptography, bash, ctf, wargames]
 layout: post
 ---
 
-**Level 10 → Level 11**
+**Level 11 → Level 12**
 
 **Concept Explained**  
 
