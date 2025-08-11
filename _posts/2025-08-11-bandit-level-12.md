@@ -1,5 +1,5 @@
 ---
-title: "Bandit Level 11 → Level 12"
+title: "Bandit Level 12 → Level 13"
 date: 2025-08-11
 categories: [Walkthroughs, OverTheWire]
 tags: [bandit, linux, hexdump, Cryptography, bash, ctf, wargames]
@@ -24,16 +24,23 @@ Hexdump is a simple visual representation of binary data shown in hexadecimal (b
     ```bash
     ls -l
     cd /tmp
+
     mkdir <name_of_directory> #Or use {mktemp -d} which will make a directory with a ramdom name
+    
     cp /home/bandit12/data.txt . 
+
     mv data.txt data.hex
+
     xxd -r data.hex > file1
+    
     #If gzip compressed data:
     mv file1 file1.gz
     gunzip file1.gz
+    
     #If bzip2 compressed data:
     mv file1 file1.bz2
     bunzip2 file1.bz2
+    
     #If POSIX tar archive:
     tar -xf file1
     ```
@@ -63,20 +70,24 @@ Hexdump is a simple visual representation of binary data shown in hexadecimal (b
 
     ```bash
     mkdir <name_of_directory> 
-    cp /home/bandit12/data.txt . #Here the . represent the new directory that you just created such that it's your current working directory
-    mv data.txt data.hex
+
+    cp /home/bandit12/data.txt .
+     #Here the . represent the new directory that you just created such that it's your current working directory
+    
+    mv data.txt data.hex  #Renaming  the file
     ```
 
 5. Reverse the hexdump in data.hex file using the `xxd` command with appropriate flag i.e. -r (reverse)
 
    ```bash
-   xxd -r data.hex > file1 # Reversing the hexdump and saving the output into file1 using stdout redirection i.e >
+   xxd -r data.hex > file1
+    # Reversing the hexdump and saving the output into file1
    ```
 
 6. Checking the type of compression and decompression the file unitl we get the human readabe file i.e ASCII text
     ```bash
     # Check with `file` command to check for the file type then use appropriate command based on the compression.
-
+    file <file_name>
     ```
      Decompression Decision Table:
   If `gzip compressed data`:
