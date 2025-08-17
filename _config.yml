@@ -183,3 +183,14 @@ plugins:
   - jekyll-seo-tag
 
 
+comments:
+  provider: giscus
+  giscus:
+    repo: Suyogya-Joshi/r3x-sec.github.io
+    repo_id: "R_kgDOPSCTRQ"
+    category: "Announcements"
+    category_id: "DIC_kwDOPSCTRc4Cj3M1"
+    mapping: pathname
+    reactions_enabled: 1
+    input_position: bottom
+    lang: en
