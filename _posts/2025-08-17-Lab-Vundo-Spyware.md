@@ -1,7 +1,7 @@
 ---
 title: "Dissecting the Vundo Trojan in a Windows XP Lab"
 date: 2025-08-17
-categories: [Malware Analysis, Wireshark]
+categories: [Malware Analysis, Labs]
 tags: [trojan, vundo, spyware, wireshark, windowsxp]
 layout: post
 ---
@@ -22,7 +22,7 @@ Before infection, I captured baseline traffic on a clean XP VM. Even when idle, 
 - **ARP** → resolving IP addresses into MAC addresses.  
 - **Browser Service** → maintaining the local workgroup list.  
 
-![Wireshark Capture](assets/img/wireshark_icmp.png)  
+![Wireshark Capture](assets/img/Lab_VUNDO/wireshark_icmp.png)  
 
 This traffic is normal and expected for XP systems in a LAN environment.  
 
@@ -32,7 +32,7 @@ This traffic is normal and expected for XP systems in a LAN environment.
 
 First, I browsed a safe website to compare normal browsing traffic.  
 
-![Wireshark Capture](assets/img/wireshark_icmp_website_normal.png)  
+![Wireshark Capture](assets/img/Lab_VUNDO/wireshark_icmp_website_normal.png)  
 
 Then I accessed a **malicious site**:  
 
@@ -45,7 +45,7 @@ From there, a file named `1001Passwords.exe` was downloaded. This executable act
   - `wintug32.dll`  
   - `jkkiff.dll`  
 
-![System32](assets/img/System32_scn.png)  
+![System32](assets/img/Lab_VUNDO/System32_scn.png)  
 
 The EXE itself wasn’t the main threat here the DLLs were the actual Vundo payload.  
 
@@ -61,7 +61,7 @@ Once the Trojan was active, Wireshark showed suspicious traffic. The system repe
 - NAVCANZVLUPF.HKCOO
 
 
-![WireShark Capture](assets/img/Suspicious_cap_wireshark.png)  
+![WireShark Capture](assets/img/Lab_VUNDO/Suspicious_cap_wireshark.png)  
 
 Because the lab environment was isolated, DNS lookups failed. The malware then attempted **NBNS** and **ARP queries** on the LAN, essentially broadcasting:  
 
@@ -78,7 +78,7 @@ The malicious DLLs were difficult to delete manually because:
 - They were loaded into memory.
 - Registry entries made sure that they reloaded on startup.  
 
-![Deleting DLL Files](assets/img/Deleting_DLL_FILES.png)  
+![Deleting DLL Files](assets/img/Lab_VUNDO/Deleting_DLL_FILES.png)  
 
 I ran **Malwarebytes Anti-Malware** inside the VM:  
 
@@ -86,7 +86,7 @@ I ran **Malwarebytes Anti-Malware** inside the VM:
 - Warned that files could not be removed immediately.  
 - After reboot and cleaning, the system was restored.  
 
-![Malwarebytes](assets/img/Malwarebytes_scan.png)  
+![Malwarebytes](assets/img/Lab_VUNDO/Malwarebytes_scan.png)  
 
 ---
 
