@@ -37,11 +37,11 @@ Before infection, I ran a baseline capture with **Wireshark** and checked the sy
 
 Example `netstat` entries looked like:  
 
-XPPro:epmap
-XPPro:microsoft-ds
-XPPro:1025
-XPPro:5000
-XPPro:netbios-ssn
+- XPPro:epmap
+- XPPro:microsoft-ds
+- XPPro:1025
+- XPPro:5000
+- XPPro:netbios-ssn
 
 This is why Wireshark showed **NBNS** and **Browser Service** packets — Windows XP is chatty even when idle.  
 
