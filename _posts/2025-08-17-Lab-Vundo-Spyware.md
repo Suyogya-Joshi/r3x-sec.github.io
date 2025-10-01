@@ -118,3 +118,7 @@ This lab gave me a hands-on view of how a Trojan works from infection to attempt
 
 It also reinforced a key lesson:
  **if you download and run cracked software, you’re essentially giving attackers an open door into your system.**
+
+ ---
+
+ ~ Rex

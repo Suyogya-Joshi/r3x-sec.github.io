@@ -149,3 +149,7 @@ This lab showed how a stealthy RAT like Arucer works — from the dropper EXE, t
 
 It reinforced the key lesson:  
 **if you run cracked or untrusted software, you might be handing over your machine to an attacker without even knowing it.**  
+
+---
+
+~ Rex
