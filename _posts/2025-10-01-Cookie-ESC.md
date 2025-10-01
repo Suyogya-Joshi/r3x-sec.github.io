@@ -1,6 +1,6 @@
 ---
 title: "CySCA 2014 Lab – Part 1: Cookie Editing to Escalate Privileges"
-date: 2025-09-05
+date: 2025-10-01
 categories: [Web Security, Labs]
 tags: [cookies, burpsuite, privilege-escalation, cysca2014, kali]
 layout: post
@@ -55,7 +55,7 @@ Host: 127.0.0.1 Port: 8080
 2. Browse to `http://192.168.100.210/index.php` and click **Login**.  
 This generates traffic visible in **Burp Proxy → HTTP History**.
 
-![Burp_Suite](assets/img/lab5/part1/Burp_history.png)
+![Burp_Suite](assets/img/Cookie/part1/Burp_history.png)
 
 3. Inspect the **Raw request** to `login.php`.  
 We find two cookie parameters:
@@ -63,7 +63,7 @@ We find two cookie parameters:
 - `PHPSESSID=xyz123` → session ID  
 - `vip=0` → privilege level 
 
-![Burp_Suite](assets/img/lab5/part1/Burp_raw_request.png)
+![Burp_Suite](assets/img/Cookie/part1/Burp_raw_request.png)
 
 ---
 
@@ -71,7 +71,7 @@ We find two cookie parameters:
 
 In Burp → Project Options → Session → Session Handling Rules → Cookie Jar, enable → Edit, Scope → Select `Proxy` in Tools scope :
 
-![Burp_Suite](assets/img/lab5/part1/Burp_Session_Handling.png)
+![Burp_Suite](assets/img/Cookie/part1/Burp_Session_Handling.png)
 
 “Use cookies from Burp’s cookie jar”.
 
@@ -79,7 +79,7 @@ Scroll to the Cookie Jar, locate vip, and edit:
 
 vip=0  →  vip=1
 
-![Burp_Suite](assets/img/lab5/part1/Burp_Cookie_jar.png)
+![Burp_Suite](assets/img/Cookie/part1/Burp_Cookie_jar.png)
 
 Refresh the site in IceWeasel.
 
@@ -88,7 +88,7 @@ Refresh the site in IceWeasel.
 ## Result
 A new Blog tab appears.
 
-![Website](assets/img/lab5/part1/Website_Blog.png)
+![Website](assets/img/Cookie/part1/Website_Blog.png)
 
 Opening it reveals the flag, proving the privilege escalation worked.
 
