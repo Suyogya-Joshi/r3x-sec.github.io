@@ -18,8 +18,9 @@ For this stage, I used Nmap to conduct a full port scan along with service and v
 
 To identify all open ports and detect running services, I used the following command:
 
-nmap -sV -A -p- 192.168.50.63
-
+nmap -sV -A -p- 192.168.50.63 
+OR
+nmap -T 5 -A -p- 192.168.50.63
 
 Where:
 
