@@ -36,6 +36,7 @@ Nmap returned a large number of open services. Below is the captured scan output
 
 Download full Nmap scan:  
 [Full Scan Output](assets/nmap_metasploitable/nmap_fullscan.txt)
+
 ---
 
 # Port-by-Port Vulnerability Breakdown
