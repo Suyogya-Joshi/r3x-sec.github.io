@@ -35,7 +35,7 @@ Nmap returned a large number of open services. Below is the captured scan output
 ![Full Nmap Scan](/assets/img/metasploitable2/fig3_nmap_fullscan.png)
 
 
-```bash
+```text
 
 ┌──(kali㉿kali)-[~]
 └─$ nmap -T 5 -p- -A 192.168.50.63
@@ -202,7 +202,6 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 146.30 seconds
 
 ```
-
 
 ---
 
