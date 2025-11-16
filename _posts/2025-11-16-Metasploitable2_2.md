@@ -35,7 +35,7 @@ Nmap returned a large number of open services. Below is the captured scan output
 ![Full Nmap Scan](/assets/img/metasploitable2/fig3_nmap_fullscan.png)
 
 Download full Nmap scan:  
-[Full Scan Output](assets/nmap_metasploitable/nmap_fullscan.txt)
+[Full Scan Output](/assets/nmap_metasploitable/nmap_fullscan.txt)
 
 ---
 
