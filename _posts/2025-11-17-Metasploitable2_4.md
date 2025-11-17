@@ -1,6 +1,6 @@
 ---
 title: "Metasploitable 2 — Exploiting the vsftpd 2.3.4 Backdoor (Root Shell)"
-date: 2025-11-19
+date: 2025-11-17
 categories: [Pentesting, Metasploitable]
 tags: [ftp, vsftpd, metasploit, rce, exploitation]
 layout: post
@@ -30,6 +30,8 @@ Key characteristics of this backdoor:
 - Spawns a shell running as **root**  
 
 This makes it a textbook example of a malicious supply-chain compromise.
+
+![Rapid7 vsftpd](/assets/img/metasploitable2/fig_vsftpd_summary.png)
 
 ---
 
@@ -86,6 +88,8 @@ Metasploit reported:
 ```
 
 This confirms the backdoor executed successfully and a shell was opened on port 6200.
+
+![Exploit Image vsftpd ](/assets/img/metasploitable2/fig_ftp_exploit.png)
 
 ---
 
