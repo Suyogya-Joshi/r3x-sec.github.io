@@ -1,5 +1,5 @@
 ---
-title: """Detecting LLMNR & NBT-NS Poisoning"" — Network Analysis and Log Correlation"
+title: "Detecting LLMNR & NBT-NS Poisoning — Network Analysis and Log Correlation"
 date: 2025-12-18
 categories: [Active Directory, Network Analysis, Blue Team]
 tags: [llmnr, nbt-ns, detection, wireshark, event-logs, blue-team]
