@@ -1,5 +1,5 @@
 ---
-title: "Detecting LLMNR & NBT-NS Poisoning — Network Analysis and Log Correlation"
+title: """Detecting LLMNR & NBT-NS Poisoning"" — Network Analysis and Log Correlation"
 date: 2025-12-18
 categories: [Active Directory, Network Analysis, Blue Team]
 tags: [llmnr, nbt-ns, detection, wireshark, event-logs, blue-team]
@@ -143,7 +143,7 @@ The first indicator was an LLMNR query broadcast from the victim machine.
 ```
 Protocol: LLMNR
 Info: Standard query A hackme
-Source: 192.168.100.50 (victim)
+Source: 192.168.100.103 (victim)
 Destination: 224.0.0.252 (multicast)
 ```
 
@@ -162,8 +162,8 @@ Immediately following the query, a malicious response was sent by the attacker.
 ```
 Protocol: LLMNR
 Info: Standard query response A hackme
-Source: 192.168.100.200 (attacker)
-Destination: 192.168.100.50 (victim)
+Source: 192.168.100.102 (attacker)
+Destination: 192.168.100.103 (victim)
 ```
 
 ![LLMNR Response](/assets/img/llmnr-detection/fig_llmnr_response.png)
